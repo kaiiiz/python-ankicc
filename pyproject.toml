@@ -5,12 +5,15 @@ description = "Conversion anki flashcards between Traditional and Simplified Chi
 authors = ["kaiiiz <ukaizheng@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 ankipandas = "^0.3.10"
 OpenCC = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+
+[tool.poetry.scripts]
+ankicc = 'ankicc.console:run'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

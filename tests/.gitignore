@@ -1,0 +1,4 @@
+workspace/*
+!workspace/.gitkeep
+
+test_out.apkg
