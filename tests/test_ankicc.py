@@ -1,11 +1,11 @@
 from ankicc import __version__
-from ankicc.ankicc import parse_args, main
+from ankicc.console import parse_args, main
 import ankipandas
 import os
 
 
 def test_version():
-    assert __version__ == '0.1.0'
+    assert __version__ == '0.2.0'
 
 
 def test_cc():
