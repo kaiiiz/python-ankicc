@@ -5,7 +5,7 @@ description = "Conversion anki flashcards between Traditional and Simplified Chi
 authors = ["kaiiiz <ukaizheng@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 ankipandas = "^0.3.10"
 OpenCC = "^1.1.2"
 
