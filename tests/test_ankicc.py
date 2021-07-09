@@ -1,5 +1,5 @@
 from ankicc import __version__
-from ankicc.ankicc import parse_args, main
+from ankicc.console import parse_args, main
 import ankipandas
 import os
 

@@ -10,9 +10,7 @@ from .cc import cc_collection
 TARGET_COLLECTION = ['collection.anki2', 'collection.anki20', 'collection.anki21']
 
 
-def run():
-    args = parse_args()
-
+def main(args):
     apkg_name = os.path.splitext(os.path.basename(args.apkg_path))[0]
     collection_dir = os.path.join(args.workspace, apkg_name)
     backup_dir = os.path.join(args.workspace, 'backup')
@@ -32,6 +30,11 @@ def run():
         for root, _, files in os.walk(collection_dir):
             for file_name in files:
                 zf.write(os.path.join(root, file_name), file_name)
+ 
+
+def run():
+    args = parse_args()
+    main(args)
 
 
 def parse_args(args=None) -> Namespace:
@@ -57,4 +60,5 @@ def parse_args(args=None) -> Namespace:
 
 
 if __name__ == "__main__":
-    run()
+    args = parse_args()
+    main(args)
