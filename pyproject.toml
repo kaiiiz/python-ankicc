@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ankicc"
-version = "0.2.1"
+version = "0.2.2"
 description = "Convert all fields of Anki deck package (*.apkg) between traditional and simplified Chinese"
 authors = ["kaiiiz <ukaizheng@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.7"
 ankipandas = "^0.3.10"
-OpenCC = "^1.1.2"
+OpenCC = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
